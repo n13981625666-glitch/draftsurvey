@@ -1,0 +1,28 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Draft Survey Electron App",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.example.surveyapp",
+    "productName": "Draft Survey App",
+	"icon": "ship.ico",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
